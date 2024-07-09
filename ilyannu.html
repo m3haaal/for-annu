@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>for her</title>
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            color: red;
+            font-size: 2em;
+            margin: 20px;
+        }
+    </style>
+    <script>
+        const messages = [
+            "annu",
+            "my baby",
+            "i'm",
+            "so",
+            "in love",
+            "with you",
+            "please",
+            "be mine",
+            "forever?"
+        ];
+
+        function showPopup(index) {
+            if (index < messages.length) {
+                alert(messages[index]);
+                setTimeout(() => showPopup(index + 1), 500); // Adjust the delay as needed
+            }
+        }
+
+        window.onload = () => {
+            showPopup(0);
+        };
+    </script>
+</head>
+<body>
+    <h1>i'll always be proud of you my winnner :) </h1>
+</body>
+</html>
